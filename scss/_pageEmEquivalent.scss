@@ -1,0 +1,6 @@
+// Set base em value for page in pixel relative unit
+
+@mixin pageEmEquivalent($pixels: 10) {
+    html { font-size: percentage($pixels/16); }
+    body { font-size: 1em; }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "pelinkovac",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dbrekalo/pelinkovac",
+  "authors": [
+    "Damir Brekalo <dbrekalo@gmail.com>"
+  ],
+  "description": "A set of mixins and helpers for working with sass, based on bourbon library",
+  "keywords": [
+    "bourbon",
+    "sass",
+    "mixins",
+    "helpers"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bourbon": "~4.2.3",
+    "normalize-css": "~3.0.3"
+  }
+}

@@ -1,0 +1,45 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import 'scss/all';
+
+@include normalizePlusReset;
+
+@include pageEmEquivalent(10);
+
+.hideText { @include hideText; }
+
+.hoverElement { @include hover{
+    color: red;
+}}
+
+@include defineIconFont("testIconFont", "../font/icons/fonts/test", 'v1.0', (
+
+    menu: '\e603',
+    search: '\e60a'
+
+));
+
+.iconReplacement {
+    @include iconReplacement(40,30);
+}
+
+@include mediaMinWidth(800) {
+
+    display: block;
+
+}
+
+@include mediaMinToMaxWidth(600, 800) {
+
+    display: block;
+
+}
+
+@include mediaMaxWidth(800) {
+
+    display: block;
+
+}
+
+.normalizedButton {
+    @include normalizeButton;
+}

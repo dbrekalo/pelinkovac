@@ -1,0 +1,153 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+a:focus,
+a::-moz-focus-inner {
+  outline: none;
+}
+
+ol, ul, li, h1, h2, h3, h4, p, a, td, dl, dt, dd, fieldset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  font-size: 1em;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+label, button {
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1em;
+}
+
+.hideText {
+  display: inline-block;
+  text-indent: -9999em;
+  overflow: hidden;
+}
+
+.hoverElement:hover, .hoverElement:focus {
+  color: red;
+}
+
+@font-face {
+  font-family: "testIconFont";
+  src: url("../font/icons/fonts/test.eot?v1.0");
+  src: url("../font/icons/fonts/test.eot?v1.0#iefix") format("embedded-opentype"), url("../font/icons/fonts/test.woff?v1.0") format("woff"), url("../font/icons/fonts/test.ttf?v1.0") format("truetype"), url("../font/icons/fonts/test.svg?v1.0../font/icons/fonts/test") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon"],
+[class*=" icon"] {
+  display: inline-block;
+  position: relative;
+  padding-left: 40px;
+}
+
+[class^="icon"]:before,
+[class*=" icon"]:before {
+  font-family: "testIconFont";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: -20px;
+  text-align: center;
+  text-indent: 0;
+}
+
+.iconMenu:before {
+  content: "";
+}
+
+.iconSearch:before {
+  content: "";
+}
+
+.iconReplacement {
+  padding: 0;
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  text-indent: -9999em;
+  overflow: hidden;
+}
+
+.iconReplacement:before {
+  right: 0;
+  width: auto;
+  text-indent: 0;
+}
+
+@media screen and (min-width: 50.0625em) {
+  display: block;
+}
+
+@media screen and (min-width: 37.5625em) and (max-width: 50em) {
+  display: block;
+}
+
+@media screen and (max-width: 50em) {
+  display: block;
+}
+
+.normalizedButton {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background: none;
+}
+
+.normalizedButton::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
