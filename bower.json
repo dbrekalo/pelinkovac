@@ -1,10 +1,11 @@
 {
   "name": "pelinkovac",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/dbrekalo/pelinkovac",
   "authors": [
     "Damir Brekalo <dbrekalo@gmail.com>"
   ],
+  "license": "MIT",
   "description": "A set of mixins and helpers for working with sass, based on bourbon library",
   "keywords": [
     "bourbon",
