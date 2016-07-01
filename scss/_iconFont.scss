@@ -60,7 +60,7 @@
     }
 
     @each $iconName, $iconContent in $iconMap {
-        .icon#{to-upper-case(str-slice($iconName, 1, 1)) + str-slice($iconName, 2)}:before {
+        .#{$classPrefix}#{to-upper-case(str-slice($iconName, 1, 1)) + str-slice($iconName, 2)}:before {
             content: $iconContent;
         }
     }
