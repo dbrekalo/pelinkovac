@@ -1,6 +1,6 @@
 {
     "name": "pelinkovac",
-    "version": "0.1.2",
+    "version": "1.0.0",
     "description": "A set of mixins and helpers for working with sass, based on bourbon library",
     "author": {
         "email": "dbrekalo@gmail.com",
