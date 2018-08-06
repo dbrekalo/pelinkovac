@@ -9,6 +9,7 @@ module.exports = function(grunt) {
                     'test/test.css': 'test/test.scss'
                 },
                 options: {
+                    implementation: require('node-sass'),
                     outputStyle: 'expanded',
                     sourceMap: false,
                     precision: 5
@@ -16,14 +17,12 @@ module.exports = function(grunt) {
             }
         },
 
-        watch: {
-            cssFiles: {
-                expand: true,
-                files: ['scss/**/*.scss', 'test/**/*.scss'],
-                tasks: ['sass'],
-                options: {
-                    spawn: false
-                }
+        bump: {
+            options: {
+                files: ['package.json'],
+                commitFiles: ['package.json'],
+                tagName: '%VERSION%',
+                push: false
             }
         }
 
@@ -31,7 +30,6 @@ module.exports = function(grunt) {
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('default', ['watch']);
     grunt.registerTask('build', ['sass']);
 
 };
