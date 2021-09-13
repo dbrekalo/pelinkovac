@@ -1,4 +1,4 @@
-@import 'scss/all';
+@use 'scss/all' as *;
 
 @include normalizePlusReset;
 
@@ -23,19 +23,25 @@
 
 @include mediaMinWidth(800) {
 
-    display: block;
+    html {
+        display: block;
+    }
 
 }
 
 @include mediaMinToMaxWidth(600, 800) {
 
-    display: block;
+    html {
+        display: block;
+    }
 
 }
 
 @include mediaMaxWidth(800) {
 
-    display: block;
+    html {
+        display: block;
+    }
 
 }
 
