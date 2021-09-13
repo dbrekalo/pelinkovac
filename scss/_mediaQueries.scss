@@ -1,5 +1,7 @@
 // Media query helpers
 
+@use 'em' as *;
+
 @mixin mediaMinWidth($breakpoint) {
 
     @media screen and (min-width: em($breakpoint + 1)) {

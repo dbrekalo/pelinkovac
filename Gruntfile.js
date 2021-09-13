@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                     'test/test.css': 'test/test.scss'
                 },
                 options: {
-                    implementation: require('node-sass'),
+                    implementation: require('sass'),
                     outputStyle: 'expanded',
                     sourceMap: false,
                     precision: 5

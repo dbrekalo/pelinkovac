@@ -8,6 +8,7 @@
     },
     "license": "MIT",
     "scripts": {
+        "test": "npm run build",
         "build": "grunt build",
         "bump:patch": "grunt bump:patch",
         "bump:minor": "grunt bump:minor",
@@ -30,6 +31,6 @@
         "grunt-cli": "^1.2.0",
         "grunt-sass": "^3.0.1",
         "load-grunt-tasks": "^4.0.0",
-        "node-sass": "^4.9.2"
+        "sass": "^1.39.2"
     }
 }
